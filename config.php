@@ -1,12 +1,12 @@
 <?php
-$host = 'localhost';
-$user = 'root';
+$host = '';
+$user = '';
 $pass = '';
-$dbname = 'portfolio_db';
+$dbname = '';
 // $dbport=13306;
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) { die('Database connection failed: ' . $conn->connect_error); }
-$conn->set_charset('utf8mb4');
+$conn->set_charset('');
 ?>
 
 

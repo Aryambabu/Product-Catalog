@@ -1,24 +1,14 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Oct 22, 2025 at 01:14 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+
 
 --
--- Database: `portfolio_db`
+
 --
 
 -- --------------------------------------------------------
@@ -44,17 +34,7 @@ CREATE TABLE `applications` (
 -- Dumping data for table `applications`
 --
 
-INSERT INTO `applications` (`id`, `name`, `category`, `short_description`, `long_description`, `image`, `price`, `user_app_url`, `admin_app_url`, `created_at`) VALUES
-(1, 'CRM System', 'Business', 'Manage clients efficiently', '', 'assets/uploads/app_68f7734d47268.png', 14999.00, 'https://example.com/usercrm', 'https://example.com/admincrm', '2025-10-11 08:50:30'),
-(2, 'Inventory Tracker', 'Logistics', 'Track your stock levels', '', 'assets/uploads/app_68f773db1b0ed.png', 9999.00, 'https://example.com/userinv', 'https://example.com/admininv', '2025-10-11 08:50:30'),
-(3, 'HR Portal', 'HR', 'Employee management portal', 'Onboard, manage and review employees.', 'assets/uploads/sample3.jpg', 7999.00, 'https://example.com/userhr', 'https://example.com/adminhr', '2025-10-11 08:50:30'),
-(4, 'E-Commerce Store', 'Retail', 'Online store platform', 'Sell products with payments and orders.', 'assets/uploads/sample4.jpg', 19999.00, 'https://example.com/userstore', 'https://example.com/adminstore', '2025-10-11 08:50:30'),
-(5, 'Accounting Suite', 'Finance', 'Manage accounts and invoicing', 'Complete accounting and GST reports.', 'assets/uploads/sample5.jpg', 12999.00, 'https://example.com/useracc', 'https://example.com/adminacc', '2025-10-11 08:50:30'),
-(6, 'Learning LMS', 'Education', 'Online courses and quizzes', 'Create courses, track students.', 'assets/uploads/sample6.jpg', 8999.00, 'https://example.com/userlms', 'https://example.com/adminlms', '2025-10-11 08:50:30'),
-(7, 'Support Desk', 'Support', 'Ticketing and SLA management', 'Customer support ticketing system.', 'assets/uploads/sample7.jpg', 6999.00, 'https://example.com/usersupport', 'https://example.com/adminsupport', '2025-10-11 08:50:30'),
-(8, 'Project Manager', 'Productivity', 'Plan and track projects', 'Tasks, timelines, Gantt charts.', 'assets/uploads/sample8.jpg', 10999.00, 'https://example.com/userpm', 'https://example.com/adminpm', '2025-10-11 08:50:30'),
-(9, 'Analytics Dashboard', 'BI', 'Visualize business metrics', 'Dashboards and reports.', 'assets/uploads/sample9.jpg', 15999.00, 'https://example.com/userbio', 'https://example.com/adminbio', '2025-10-11 08:50:30'),
-(10, 'Appointment Scheduler', 'Services', 'Book appointments online', 'Calendar, reminders and slots.', 'assets/uploads/sample10.jpg', 4999.00, 'https://example.com/usersched', 'https://example.com/adminsched', '2025-10-11 08:50:30');
+
 
 -- --------------------------------------------------------
 
@@ -73,10 +53,7 @@ CREATE TABLE `popular` (
 -- Dumping data for table `popular`
 --
 
-INSERT INTO `popular` (`id`, `user_id`, `app_id`, `created_at`) VALUES
-(17, 1, 2, '2025-10-22 08:36:41'),
-(18, 1, 1, '2025-10-22 09:31:05'),
-(19, 1, 3, '2025-10-22 09:31:07');
+
 
 -- --------------------------------------------------------
 
@@ -93,9 +70,7 @@ CREATE TABLE `roles` (
 -- Dumping data for table `roles`
 --
 
-INSERT INTO `roles` (`id`, `name`) VALUES
-(1, 'Admin'),
-(2, 'Demo User');
+
 
 -- --------------------------------------------------------
 
@@ -115,8 +90,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `created_at`) VALUES
-(1, 'admin', '0192023a7bbd73250516f069df18b500', 1, '2025-10-11 08:50:30');
+
 
 -- --------------------------------------------------------
 
@@ -136,10 +110,7 @@ CREATE TABLE `wishlist` (
 -- Dumping data for table `wishlist`
 --
 
-INSERT INTO `wishlist` (`id`, `user_id`, `title`, `description`, `created_at`) VALUES
-(2, 1, 'ecommerce', 'ecommerce website', '2025-10-22 10:16:16'),
-(3, 1, 'GDSGH', 'DGDG', '2025-10-22 10:19:37'),
-(4, 1, 'sfa', 'sfaf', '2025-10-22 11:10:10');
+
 
 --
 -- Indexes for dumped tables

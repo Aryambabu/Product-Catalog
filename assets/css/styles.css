@@ -1,0 +1,27 @@
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.list-card {
+    display: flex;
+    gap: 1rem;
+}
+
+.list-card img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+}
+
+#categoryButtons {
+  gap: 8px;
+}
+
+#categoryButtons .btn {
+  margin-bottom: 5px;
+}

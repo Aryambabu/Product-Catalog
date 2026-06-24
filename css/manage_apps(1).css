@@ -1,0 +1,112 @@
+/* ===== Body ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Large Box Container ===== */
+.container {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    max-width: 1200px;
+}
+
+/* ===== Page Heading ===== */
+h3 {
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #71d07e);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #da9705, #ec9b04);
+    border: none;
+    padding: 5px 12px;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ec4909, #db3705);
+    border: none;
+    padding: 5px 12px;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+    padding: 8px 18px;
+}
+
+/* ===== Table Styling ===== */
+.table {
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.table th {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+.table tr:hover {
+    background: #e2e6f0;
+}
+
+/* ===== Action Buttons Spacing ===== */
+.table td a {
+    margin-right: 5px;
+}
+
+/* ===== TinyMCE Textarea (if used) ===== */
+textarea {
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 150px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+}
+
